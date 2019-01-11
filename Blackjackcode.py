@@ -35,15 +35,42 @@ Queen = 10
 'King of Clubs', 'King of Spades', 'King of Hearts', 'King of Diamonds':{
 King = 10
 })
-if 11+x<=21:
+
+if 11 + x <= 21 or :
   ace = 11
 else:
   ace = 1
 
+games_played=0
+games_won=0
+games_lost=0
 name = input("Hello and welcome to Blackjack, what is your name?")
 decks = input("How many decks would you like to play Blackjack with?")
-cards * decks
+cards * decks = totalcards
 while 0 == 0 :
-  random.select cards
-  print(f"Would you like to hit or pass {name}?")
-  while winning <
+  while player_number<=21 and ai_number<=21 or decision == 'pass':
+    random.choice(cards) = ai_selection
+    decision = input(f"Would you like to hit or pass {name}?")
+    if decision = hit:
+      print(f"You have been hit with a {given_card}")
+    elif decision == 'pass':
+      print("Ok, you have passed.")
+    else:
+      print("Please type in either 'hit' or 'pass'.")
+  if player_number>=21 or player_number<ai_number and ai_number<=21:
+    games_lost += 1
+    print(f"Sorry {name}, you lost this game.")
+  elif playernumber<=21 and player_number>ai_number or ai_number>=21:
+    games_won += 1
+    print(f"Congratulations {name} you won this game of blackjack!")
+  replay = input("Would you like to play again?")
+  if replay == no:
+    games_played += 1
+    break
+  elif replay == yes:
+    games_player += 1
+    print("Ok, another game it is then")
+  else:
+    print("Please either respond with 'yes' or 'no'.")
+
+print(f"Thank you {name} for playing my game {games_player} many times! You won {games_won} of the games and lost {games_lost} of them.)
